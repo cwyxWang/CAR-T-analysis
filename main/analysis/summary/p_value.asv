@@ -1,0 +1,11 @@
+clear
+clc
+data_path = 'I:\CAR_T\20230812_hd';
+file_name = cell(4,1);
+file_name{1} = fullfile(data_path,'actin.csv');
+file_name{2} = fullfile(data_path,'claer.csv');
+file_name{3} = fullfile(data_path,'surface.csv');
+file_name{4} = fullfile(data_path,'tublin.csv');
+file_name{5} = fullfile(data_path,'kill.csv');
+
+A = readmatrix(file_name{1})
